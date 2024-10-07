@@ -1,0 +1,29 @@
+Crear el HTML para mostrar los planetas: 
+En planets.component.html, itera sobre los planetas y muestra la información:
+
+<h1>Planets</h1>
+<ul>
+  <li *ngFor="let planet of planets">
+    <h2>{{ planet.name }}</h2>
+    <p>{{ planet.description }}</p>
+    <h3>Characters:</h3>
+    <ul>
+      <li *ngFor="let character of planet.characters">{{ character }}</li>
+    </ul>
+  </li>
+</ul>
+
+
+Paso 5: Relacionar Planetas con Personajes
+Asegúrate de que cada objeto Planet tenga una lista de personajes que puedas mostrar. 
+Dependiendo de cómo estés estructurando tus datos, podrías obtener personajes relacionados 
+desde tu servicio de personajes.
+
+Paso 6: Añadir estilos y mejorar la UI
+Puedes agregar estilos en planets.component.css para mejorar la apariencia de la página. 
+Considera utilizar Angular Material o Bootstrap para un diseño más atractivo.
+
+Paso 7: Probar la aplicación
+Ejecuta tu aplicación y navega a /planets para ver los planetas y sus personajes relacionados.
+
+ng serve
